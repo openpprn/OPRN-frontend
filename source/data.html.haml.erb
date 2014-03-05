@@ -1,0 +1,68 @@
+---
+title: Data Management
+---
+
+%h1 Data Management
+%p "It's your data. And you can make it advance research for a cure."
+%hr/
+.row
+  .col-md-3
+  .col-md-6
+    %center
+      %h4 How much do you want your data to advance research?
+
+    %input{:type=>"range", :value => 10, :min => 0, :max => 10}
+
+    .pull-left
+      %i.fa.fa-lock
+      %label Completely Private
+    %label.pull-right
+      %i.fa.fa-globe
+      %label Fully Accessible for Research
+  .col-md-3
+
+
+%br/
+%h2 Your Data Sources
+
+
+.table-responsive
+  %table.table.table-striped
+    %thead
+      %tr
+        %th{:style => "width: 200px;"} Permitted for Research?
+        %th Data Source
+        %th{:style => "width: 100px;"}
+    %tbody
+      %tr
+        %td
+          %i.fa.fa-check
+        %td Your Self-Reported Health Background
+        %td
+          .btn.btn-sm.btn-danger Remove
+      %tr
+        %td
+          %i.fa.fa-check
+        %td Your FitBit Data
+        %td
+          .btn.btn-sm.btn-danger Remove
+      %tr
+        %td
+          %i.fa.fa-check
+        %td Your MyFitnessPal Data
+        %td
+          .btn.btn-sm.btn-danger Remove
+      %tr
+        %td
+          %i.fa.fa-check
+        %td Your Withings Data
+        %td
+          .btn.btn-sm.btn-danger Remove
+      %tr
+        %td
+          %i.fa.fa-check
+        %td Your 23&Me Data
+        %td
+          .btn.btn-sm.btn-danger Remove
+%center
+  .btn.btn-success Add New Data Source

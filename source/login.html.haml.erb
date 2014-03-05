@@ -1,0 +1,21 @@
+---
+title: Login
+---
+-#  required: "",
+
+.row
+  .col-md-4
+  .col-md-4
+    %h1 Login
+    %br/
+    %form.form-signin{role: "form"}
+      %input.form-control{autofocus: "", placeholder: "Email address", type: "email"}/
+      %br/
+      %input.form-control{placeholder: "Password", type: "password"}/
+      %label.checkbox
+        %input{type: "checkbox", value: "remember-me"}/
+        Remember me
+      %a{:href => "dashboard.html"}
+        .btn.btn-lg.btn-primary.btn-block Join
+
+  .col-md-4

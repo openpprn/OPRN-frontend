@@ -1,0 +1,25 @@
+---
+title: Join
+---
+
+
+.row
+  .col-md-4
+  .col-md-4
+    %h1 Join
+    %br/
+    %form.form-signin{role: "form"}
+      %input.form-control{autofocus: "", placeholder: "Email address", type: "email"}/
+      %br/
+      %select.form-control
+        %option{value: "#"} Choose your Condition...
+        %option{value: "three"} ALD
+        %option{value: "one"} Cancer
+        %option{value: "two"} Crohn's Disease
+        %option{value: "five"} Sleep Apnea
+        %option{value: "four"} Ulcerative Colitis
+      %br/
+      %a{:href => "consent.html"}
+        .btn.btn-lg.btn-primary.btn-block Join
+
+  .col-md-4
