@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="">
 
-    <title>Landing Page</title>
+    <title>Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -65,15 +65,26 @@
 
     <div class="container" role="main">
 
-      <h1>OpenPPRN</h1>
-<p>
-  <div class='lead'>This is a prototype</div>
-</p>
-<center>
-  <h1>
-    <i class='fa fa-globe'></i>
-  </h1>
-</center>
+      <div class='row'>
+  <div class='col-md-4'></div>
+  <div class='col-md-4'>
+    <h1>Login</h1>
+    <br>
+    <form class='form-signin' role='form'>
+      <input autofocus='' class='form-control' placeholder='Email address' type='email'>
+      <br>
+      <input class='form-control' placeholder='Password' type='password'>
+      <label class='checkbox'>
+        <input type='checkbox' value='remember-me'>
+        Remember me
+      </label>
+      <a href='dashboard.html'>
+        <div class='btn btn-lg btn-primary btn-block'>Join</div>
+      </a>
+    </form>
+  </div>
+  <div class='col-md-4'></div>
+</div>
 
 
     </div><!-- /.container -->

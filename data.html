@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="">
 
-    <title>Landing Page</title>
+    <title>Data Management</title>
 
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -65,14 +65,89 @@
 
     <div class="container" role="main">
 
-      <h1>OpenPPRN</h1>
-<p>
-  <div class='lead'>This is a prototype</div>
-</p>
+      <h1>Data Management</h1>
+<p>"It's your data. And you can make it advance research for a cure."</p>
+<hr>
+<div class='row'>
+  <div class='col-md-3'></div>
+  <div class='col-md-6'>
+    <center>
+      <h4>How much do you want your data to advance research?</h4>
+    </center>
+    <input max='10' min='0' type='range' value='10'>
+    <div class='pull-left'>
+      <i class='fa fa-lock'></i>
+      <label>Completely Private</label>
+    </div>
+    <label class='pull-right'>
+      <i class='fa fa-globe'></i>
+      <label>Fully Accessible for Research</label>
+    </label>
+  </div>
+  <div class='col-md-3'></div>
+</div>
+<br>
+<h2>Your Data Sources</h2>
+<div class='table-responsive'>
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th style='width: 200px;'>Permitted for Research?</th>
+        <th>Data Source</th>
+        <th style='width: 100px;'></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <i class='fa fa-check'></i>
+        </td>
+        <td>Your Self-Reported Health Background</td>
+        <td>
+          <div class='btn btn-sm btn-danger'>Remove</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class='fa fa-check'></i>
+        </td>
+        <td>Your FitBit Data</td>
+        <td>
+          <div class='btn btn-sm btn-danger'>Remove</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class='fa fa-check'></i>
+        </td>
+        <td>Your MyFitnessPal Data</td>
+        <td>
+          <div class='btn btn-sm btn-danger'>Remove</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class='fa fa-check'></i>
+        </td>
+        <td>Your Withings Data</td>
+        <td>
+          <div class='btn btn-sm btn-danger'>Remove</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class='fa fa-check'></i>
+        </td>
+        <td>Your 23&Me Data</td>
+        <td>
+          <div class='btn btn-sm btn-danger'>Remove</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <center>
-  <h1>
-    <i class='fa fa-globe'></i>
-  </h1>
+  <div class='btn btn-success'>Add New Data Source</div>
 </center>
 
 
