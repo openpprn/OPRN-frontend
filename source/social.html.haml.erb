@@ -1,94 +1,94 @@
----
-title: People
----
+/ ---
+/ title: People
+/ ---
 
--# include MD5 gem, should be part of standard ruby install
--require 'digest/md5'
-
-
-
-%h1 People
-
-.row
-  .col-md-5
-    %img{:src=>"https://maps.googleapis.com/maps/api/staticmap?center=Mission+Disctrict%2C+San+Francisco%2C+CA&markers=Mission+Disctrict%2C+San+Francisco%2C+CA&sensor=false&size=460x470&zoom=11", :width => "100%", :class => "map"}
-
-    %h2 Support Groups
-
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th{:style => "width: 200px;"} Date
-            %th Survey
-        %tbody
-          %tr
-            %td
-              Next Thursday
-            %td San Francisco's Young Professionals with IBD
-
-          %tr
-            %td
-              March 25, 2014
-            %td Berkeley Students with IBD
-
-          %tr
-            %td
-              April 15, 2014
-            %td CCFA Adult Support Group
-
-
-  .col-md-7
-
-    / .alert.alert-info
-    /   There are 5 other patients within 5 miles of you. Do you want them to be able to see you?
-
-    %h3 Here's how you look to others:
-
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
-
-        %tbody
-          %tr
-            %td
-              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('3')}?d=identicon", :style => "margin-right: 10px;"}
-              .pull-left
-                %h3
-                  Sean
-                San Francisco, CA
-
-
-      %a{:href=>"#"} Edit how you look to others
+/ -# include MD5 gem, should be part of standard ruby install
+/ -require 'digest/md5'
 
 
 
+/ %h1 People
 
-    %h3 Around you
+/ .row
+/   .col-md-5
+/     %img{:src=>"https://maps.googleapis.com/maps/api/staticmap?center=Mission+Disctrict%2C+San+Francisco%2C+CA&markers=Mission+Disctrict%2C+San+Francisco%2C+CA&sensor=false&size=460x470&zoom=11", :width => "100%", :class => "map"}
 
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
+/     %h2 Support Groups
 
-        %tbody
-          %tr
-            %td
-              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('2')}?d=identicon", :style => "margin-right: 10px;"}
-              .pull-left
-                %h3
-                  Jessica
-                San Francisco, CA
-          %tr
-            %td
-              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('1')}?d=identicon", :style => "margin-right: 10px;"}
-              .pull-left
-                %h3
-                  Brian
-                San Francisco, CA
+/     .table-responsive
+/       %table.table.table-striped
+/         %thead
+/           %tr
+/             %th{:style => "width: 200px;"} Date
+/             %th Survey
+/         %tbody
+/           %tr
+/             %td
+/               Next Thursday
+/             %td San Francisco's Young Professionals with IBD
+
+/           %tr
+/             %td
+/               March 25, 2014
+/             %td Berkeley Students with IBD
+
+/           %tr
+/             %td
+/               April 15, 2014
+/             %td CCFA Adult Support Group
+
+
+/   .col-md-7
+
+/     / .alert.alert-info
+/     /   There are 5 other patients within 5 miles of you. Do you want them to be able to see you?
+
+/     %h3 Here's how you look to others:
+
+/     .table-responsive
+/       %table.table.table-striped
+/         %thead
+/           %tr
+/             %th
+
+/         %tbody
+/           %tr
+/             %td
+/               %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('3')}?d=identicon", :style => "margin-right: 10px;"}
+/               .pull-left
+/                 %h3
+/                   Sean
+/                 San Francisco, CA
+
+
+/       %a{:href=>"#"} Edit how you look to others
+
+
+
+
+/     %h3 Around you
+
+/     .table-responsive
+/       %table.table.table-striped
+/         %thead
+/           %tr
+/             %th
+
+/         %tbody
+/           %tr
+/             %td
+/               %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('2')}?d=identicon", :style => "margin-right: 10px;"}
+/               .pull-left
+/                 %h3
+/                   Jessica
+/                 San Francisco, CA
+/           %tr
+/             %td
+/               %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('1')}?d=identicon", :style => "margin-right: 10px;"}
+/               .pull-left
+/                 %h3
+/                   Brian
+/                 San Francisco, CA
 
 
 
