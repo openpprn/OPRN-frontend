@@ -71,6 +71,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :directory_indexes
+set :index_file, "registration.html"
 
 
 # To deploy to a remote branch via git (e.g. gh-pages on github):
