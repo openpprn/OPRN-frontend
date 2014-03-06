@@ -1,28 +1,20 @@
 ---
-title: Data Management
+title: My Health Data
 ---
 
-%h1 Data Management
-%p "It's your data. And you can make it advance research for a cure."
+%h1 My Health Data
+%p
+  It's your data. You can make it advance research for a cure.
+
+
+  %a.pull-right{:href=>"#"} Manage Your Data Donation
 %hr/
-.row
-  .col-md-3
-  .col-md-6
-    %center
-      %h4 How much do you want your data to advance research?
-
-    %input{:type=>"range", :value => 10, :min => 0, :max => 10}
-
-    .pull-left
-      %i.fa.fa-lock
-      %label Completely Private
-    %label.pull-right
-      %i.fa.fa-globe
-      %label Fully Accessible for Research
-  .col-md-3
 
 
-%br/
+%img{:src=> "images/time-graph.png", :width => "100%"}
+
+
+
 %h2 Your Data Sources
 
 
@@ -30,39 +22,30 @@ title: Data Management
   %table.table.table-striped
     %thead
       %tr
-        %th{:style => "width: 200px;"} Permitted for Research?
         %th Data Source
-        %th{:style => "width: 100px;"}
+        %th{:style => "width: 200px;"} Donated to Research?
     %tbody
       %tr
-        %td
-          %i.fa.fa-check
         %td Your Self-Reported Health Background
         %td
-          .btn.btn-sm.btn-danger Remove
-      %tr
-        %td
           %i.fa.fa-check
+      %tr
         %td Your FitBit Data
         %td
-          .btn.btn-sm.btn-danger Remove
+
       %tr
-        %td
-          %i.fa.fa-check
         %td Your MyFitnessPal Data
         %td
-          .btn.btn-sm.btn-danger Remove
-      %tr
-        %td
           %i.fa.fa-check
+      %tr
         %td Your Withings Data
         %td
-          .btn.btn-sm.btn-danger Remove
-      %tr
-        %td
           %i.fa.fa-check
+      %tr
         %td Your 23&Me Data
         %td
-          .btn.btn-sm.btn-danger Remove
+          %i.fa.fa-check
+
+
 %center
   .btn.btn-success Add New Data Source
