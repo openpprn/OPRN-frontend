@@ -3,6 +3,5 @@ body {
   padding-top: 50px; }
 
 /* line 4, /Users/Sean/Google Drive/Sites/openpprn/source/stylesheets/application.css.scss */
-.starter-template {
-  padding: 40px 15px;
-  text-align: center; }
+.inline {
+  display: inline; }
