@@ -29,7 +29,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: "registration.html"} My PPRN
+          %a.navbar-brand{href: "#"} My PPRN
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li
@@ -41,21 +41,18 @@
             %li
               %a{href: "insights"} Insights
             %li
-              %a{href: "social"} Social
+              %a{href: "social"} People
           %ul.nav.navbar-nav.pull-right
-            %li
-              %a{href: "#"}
-                %i.fa.fa-star
-                1650
             %li
               %a{href: "login"} John Doe
             %li
               %a{href: "registration.html"}
                 %i.fa.fa-sort-down
-        / /.nav-collapse
     .container{role: "main"}
       = yield
-    / /.container
+
+    %br/
+
     /
       Bootstrap core JavaScript
       \==================================================

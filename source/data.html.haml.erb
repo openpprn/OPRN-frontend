@@ -8,6 +8,9 @@ title: My Health Data
 
 
   %a.pull-right{:href=>"#"} Manage Your Data Donation
+  %span.pull-right= "&nbsp;|&nbsp;"
+  %a.pull-right{:href=>"track"} Track from Phone
+
 %hr/
 
 
@@ -15,37 +18,43 @@ title: My Health Data
 
 
 
-%h2 Your Data Sources
 
 
-.table-responsive
-  %table.table.table-striped
-    %thead
-      %tr
-        %th Data Source
-        %th{:style => "width: 200px;"} Donated to Research?
-    %tbody
-      %tr
-        %td Your Self-Reported Health Background
-        %td
-          %i.fa.fa-check
-      %tr
-        %td Your FitBit Data
-        %td
+.row
+  .col-md-9
+    %h3 Track
 
-      %tr
-        %td Your MyFitnessPal Data
-        %td
-          %i.fa.fa-check
-      %tr
-        %td Your Withings Data
-        %td
-          %i.fa.fa-check
-      %tr
-        %td Your 23&Me Data
-        %td
-          %i.fa.fa-check
+    = partial "track.html.haml"
 
+  .col-md-3
+    %h3 Your Data Sources
+    .table-responsive
+      %table.table.table-striped
+        %thead
+          %tr
+            %th Data Source
+            %th Donating?
+        %tbody
+          %tr
+            %td Your Self-Reported Health Background
+            %td
+              %i.fa.fa-check
+          %tr
+            %td Your FitBit Data
+            %td
 
-%center
-  .btn.btn-success Add New Data Source
+          %tr
+            %td Your MyFitnessPal Data
+            %td
+              %i.fa.fa-check
+          %tr
+            %td Your Withings Data
+            %td
+              %i.fa.fa-check
+          %tr
+            %td Your 23&Me Data
+            %td
+              %i.fa.fa-check
+    %center
+      .btn.btn-success.btn-sm Add New Data Source
+
