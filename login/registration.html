@@ -9,7 +9,7 @@
     <meta content='' name='description'>
     <meta content='' name='author'>
     <link href='' rel='shortcut icon'>
-    <title>Landing Page</title>
+    <title>Login</title>
     <!-- Bootstrap core CSS -->
     <link href='stylesheets/bootstrap.min.css' rel='stylesheet'>
     <!-- Custom styles for this template -->
@@ -24,14 +24,32 @@
   </head>
   <body screen_capture_injected='true'>
     <div class='container' role='main'>
-      <h1>OpenPPRN</h1>
-      <p>
-        <div class='lead'>This is a prototype</div>
-      </p>
+      <div class='row'>
+        <div class='col-md-4'></div>
+        <div class='col-md-4'>
+          <h1>Login</h1>
+          <br>
+          <form class='form-signin' role='form'>
+            <input autofocus='' class='form-control' placeholder='Email address' type='email'>
+            <br>
+            <input class='form-control' placeholder='Password' type='password'>
+            <label class='checkbox'>
+              <input type='checkbox' value='remember-me'>
+              Remember me
+            </label>
+            <a href='dashboard.html'>
+              <div class='btn btn-lg btn-primary btn-block'>Join</div>
+            </a>
+          </form>
+        </div>
+        <div class='col-md-4'></div>
+      </div>
+      <br>
+      <br>
       <center>
-        <h1>
-          <i class='fa fa-globe'></i>
-        </h1>
+        <div class='muted'>
+          <a href="dashboard">Back to logged in</a>
+        </div>
       </center>
     </div>
     <!-- /.container -->
