@@ -9,12 +9,12 @@ title: My Health Data
 
   %a.pull-right{:href=>"#"} Manage Your Data Donation
   %span.pull-right= "&nbsp;|&nbsp;"
-  %a.pull-right{:href=>"track"} Track from Phone
+  %a.pull-right{:href=>"/track"} Track from Phone
 
 %hr/
 
 
-%img{:src=> "images/time-graph.png", :width => "100%"}
+%img{:src=> "/images/time-graph.png", :width => "100%"}
 
 
 
@@ -24,7 +24,7 @@ title: My Health Data
   .col-md-9
     %h3 Track
 
-    = partial "track.html.haml"
+    = partial "/track.html.haml"
 
 
     %center
