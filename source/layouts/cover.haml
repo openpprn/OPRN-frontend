@@ -1,34 +1,9 @@
 !!!
 / saved from url=(0050)http://getbootstrap.com/examples/starter-template/
 %html{lang: "en"}
-  %head
-    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{charset: "utf-8"}/
-    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
-    %meta{content: "", name: "description"}/
-    %meta{content: "", name: "author"}/
-    %link{href: "", rel: "shortcut icon"}/
-    %title= current_page.data.title
-    / Bootstrap core CSS
-    %link{href: "/stylesheets/bootstrap.min.css", rel: "stylesheet"}/
-    / Custom styles for this template
-    %link{href: "/stylesheets/application.css", rel: "stylesheet"}/
-    / Font Awesome
-    %link{href: "/stylesheets/font-awesome.min.css", rel: "stylesheet"}/
-    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
-    /[if lt IE 9]
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  %body{screen_capture_injected: "true"}
+  = partial "/layouts/head.haml"
+%body{screen_capture_injected: "true"}
+  .container{role: "main"}
+    = yield
+  = partial "/layouts/foot.haml"
 
-    .container{role: "main"}
-      = yield
-
-    /
-      Bootstrap core JavaScript
-      \==================================================
-    / Placed at the end of the document so the pages load faster
-    / jQuery (necessary for Bootstrap's JavaScript plugins)
-    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
-    %script{src: "/javascripts/bootstrap.min.js"}
