@@ -7,73 +7,31 @@ title: People
 
 
 
-%h1 People
+.row
+  .col-xs-12
+    .page-header
+      %h1
+        People
+        %small
 
 .row
-  .col-md-5
-    %img{:src=>"https://maps.googleapis.com/maps/api/staticmap?center=Mission+Disctrict%2C+San+Francisco%2C+CA&markers=Mission+Disctrict%2C+San+Francisco%2C+CA&sensor=false&size=460x470&zoom=11", :width => "100%", :class => "map"}
+  .col-md-9
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Map
 
-    %h2 Support Groups
-
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th{:style => "width: 200px;"} Date
-            %th Survey
-        %tbody
-          %tr
-            %td
-              Next Thursday
-            %td San Francisco's Young Professionals with IBD
-
-          %tr
-            %td
-              March 25, 2014
-            %td Berkeley Students with IBD
-
-          %tr
-            %td
-              April 15, 2014
-            %td CCFA Adult Support Group
+      %img{:src=>"https://maps.googleapis.com/maps/api/staticmap?center=Mission+Disctrict%2C+San+Francisco%2C+CA&markers=Mission+Disctrict%2C+San+Francisco%2C+CA&sensor=false&size=900x300&zoom=11", :width => "100%", :class => "map"}
 
 
-  .col-md-7
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title.pull-left Discussion
+        .btn-group.btn-group-xs.pull-right
+          %button.btn.btn-default.active{type: "button"} Local Topics
+          %button.btn.btn-default{type: "button"} Global Topics
+        .clearfix
 
-    / .alert.alert-info
-    /   There are 5 other patients within 5 miles of you. Do you want them to be able to see you?
-
-    %h3 Here's how you look to others:
-
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
-
-        %tbody
-          %tr
-            %td
-              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('3')}?d=identicon", :style => "margin-right: 10px;"}
-              .pull-left
-                %h3
-                  Sean
-                San Francisco, CA
-
-
-      %a{:href=>"#"} Edit how you look to others
-
-
-
-
-    %h3 Around you
-
-    .table-responsive
-      %table.table.table-striped
-        %thead
-          %tr
-            %th
-
+      %table.table.table-striped.table-responsive
         %tbody
           %tr
             %td
@@ -90,5 +48,57 @@ title: People
                   Brian
                 San Francisco, CA
 
+      .panel-footer{:style=> "padding-bottom: 0px; padding-right: 8px; padding-top: 5px;"}
+        .pull-right
+          %button.btn.btn-primary.btn-xs{:style=>"margin-top: 3px;"} Post Local Topic
+
+        .text-center
+          %ul.pagination.pagination-sm{:style=> "margin: 0px;"}
+            %li
+              %span &laquo;
+            %li.disabled
+              %span ...
+            %li
+              %span &raquo;
+
+  .col-md-3
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title How You Look to Others
+
+      %table.table.table-striped.table-responsive
+        %tbody
+          %tr
+            %td
+              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('seanahrens@gmail.com')}?d=identicon", :style => "margin-right: 10px;"}
+              .pull-left
+                %h3
+                  Sean
+                San Francisco, CA
 
 
+      %a.btn.btn-primary.center-block{:href=>"#"} Edit how you look to others
+
+
+
+
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Around You
+
+      %table.table.table-striped.table-responsive
+        %tbody
+          %tr
+            %td
+              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('2')}?d=identicon", :style => "margin-right: 10px;"}
+              .pull-left
+                %h3
+                  Jessica
+                San Francisco, CA
+          %tr
+            %td
+              %img.pull-left{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('1')}?d=identicon", :style => "margin-right: 10px;"}
+              .pull-left
+                %h3
+                  Brian
+                San Francisco, CA
