@@ -1,0 +1,142 @@
+---
+title: Contributions
+---
+
+.row
+  .col-xs-12
+    .page-header
+      %h1
+        Contributions
+        %small
+
+
+
+
+.row
+  .col-md-9
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Your Initial Contributions to Research
+
+
+      %table.table.table-responsive.table-hover
+        %thead
+          %tr
+            / %th.col-xs-6 Topic
+            / %th Votes
+            / %th{:style => "width: 100px;"} Status
+        %tbody
+          %tr.success
+            %td
+              %h4
+                %i.fa.fa-check-square-o
+            %td
+              %h4 1
+            %td
+              %h4 Authorize Research Use of Data
+            %td
+              .btn.btn-default.btn-sm Manage
+            %td
+            %td
+              %h4 +100
+
+          %tr.success
+            %td
+              %h4
+                %i.fa.fa-check-square-o
+            %td
+              %h4 2
+            %td
+              %h4 Basic Health Information
+            %td
+              .btn.btn-default.btn-sm Manage
+            %td
+            %td
+              %h4 +100
+
+
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Your Survey Completions
+
+
+      %table.table.table-responsive.table-hover
+        %thead
+          %tr
+
+        %tbody
+
+          %tr
+            %td
+              .progress
+                .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", role: "progressbar", style: "width: 60%;"}
+                  6/10
+            %td
+              %h4 You've completed 6/10 surveys
+
+            %td
+              .btn.btn-default.btn-sm Complete More
+            %td
+              %span.h5 +100
+              %span x
+              %span 3
+            %td
+              %h4 +300
+
+
+
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Your Health Data Sources
+
+
+      %table.table.table-responsive.table-hover
+        %thead
+          %tr
+
+        %tbody
+
+          %tr
+            %td
+              .badge
+                %span.h3 2
+            %td
+              %h4 You've connected 2 health data sources
+
+            %td
+              .btn.btn-default.btn-sm Connect More
+            %td
+              %span.h5 +100
+              %span x
+              %span 6
+            %td
+              %h4 +300
+
+
+
+
+
+
+
+  .col-md-3
+
+    %a{:href => "/contributions/"}
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title Your Karma
+
+        .panel-body.text-center
+          %h1 650
+        .panel-footer
+
+
+
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Your Account
+
+      .panel-body.text-center
+        %button.btn.btn-primary.btn-block Download All My Data
+        %br/
+        %a.small{:href => ""} Delete My Account
+
