@@ -20,7 +20,7 @@
       <!-- Custom styles for this template -->
       <link href='/stylesheets/application.css' rel='stylesheet'>
       <!-- Page Specific Stylesheet (Hand-coded here) -->
-      <link href='/stylesheets/landing.css' rel='stylesheet'>
+      <link href='/stylesheets/account.css' rel='stylesheet'>
       <!-- Font Awesome -->
       <link href='/stylesheets/font-awesome.min.css' rel='stylesheet'>
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
       <![endif]-->
       <!-- Page Title -->
       <!-- Use @title, @html_title, or @page_title, in this order of preference. -->
-      <title>Landing Page</title>
+      <title>My Account</title>
     </head>
   </html>
 </html>
@@ -76,8 +76,76 @@
       </div>
     </div>
     <!-- / Page Header -->
-    <div class='starter-template'>
-      <h1>CCFA Partners</h1>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='page-header'>
+          <h1>
+            My Account
+            <small></small>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-9'>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <h4 class='panel-title'>Login</h4>
+          </div>
+          <div class='panel-body'>
+            <form class='form-horizontal' role='form'>
+              <div class='form-group'>
+                <label class='col-sm-2 control-label'>Email</label>
+                <div class='col-sm-10'>
+                  <p class='form-control'>email@example.com</p>
+                </div>
+              </div>
+              <div class='form-group'>
+                <label class='col-sm-2 control-label' for='inputPassword'>Password</label>
+                <div class='col-sm-10'>
+                  <p class='form-control-static'>
+                    <a>Reset Password</a>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <h4 class='panel-title'>Notification Preferences</h4>
+          </div>
+          <div class='panel-body'>
+            <form class='form-horizontal' role='form'>
+              <div class='radio'>
+                <label>
+                  <input checked='checked' id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
+                  Email Me
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  <input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
+                  Don't Email Me
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class='btn btn-primary pull-right'>Save</button>
+      </div>
+      <div class='col-md-3'>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <h3 class='panel-title'>Your Data</h3>
+          </div>
+          <div class='panel-body text-center'>
+            <button class='btn btn-default btn-block'>Download All My Data</button>
+            <br>
+            <a class='small' href=''>Delete My Account</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!--
       Bootstrap core JavaScript

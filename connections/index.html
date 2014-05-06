@@ -20,7 +20,7 @@
       <!-- Custom styles for this template -->
       <link href='/stylesheets/application.css' rel='stylesheet'>
       <!-- Page Specific Stylesheet (Hand-coded here) -->
-      <link href='/stylesheets/landing.css' rel='stylesheet'>
+      <link href='/stylesheets/connections.css' rel='stylesheet'>
       <!-- Font Awesome -->
       <link href='/stylesheets/font-awesome.min.css' rel='stylesheet'>
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
       <![endif]-->
       <!-- Page Title -->
       <!-- Use @title, @html_title, or @page_title, in this order of preference. -->
-      <title>Landing Page</title>
+      <title>My Health Data</title>
     </head>
   </html>
 </html>
@@ -76,8 +76,87 @@
       </div>
     </div>
     <!-- / Page Header -->
-    <div class='starter-template'>
-      <h1>CCFA Partners</h1>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='page-header'>
+          <h1>
+            My Health Data
+            <small></small>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <div class='panel-title'>Your Connected Data Sources</div>
+          </div>
+          <div class='table-responsive'>
+            <table class='table table-hover'>
+              <tr>
+                <th>Source</th>
+                <th>Last Synced</th>
+                <th>Donated to Research</th>
+                <th></th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>Overall Health</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Journal Entries</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>FitBit</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                    <button class='btn btn-default btn-sm'>Manage</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>MyFitnessPal</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                    <button class='btn btn-default btn-sm'>Manage</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Withings</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                    <button class='btn btn-default btn-sm'>Manage</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>23&Me</td>
+                  <td>Today</td>
+                  <td>
+                    <i class='fa fa-check'></i>
+                    <button class='btn btn-default btn-sm'>Manage</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class='panel-footer'>
+            <button class='btn btn-success center-block'>Add Data Source</button>
+            <a class='btn btn-primary pull-right' href='/contributions/'>Done</a>
+            <div class='clearfix'></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--
       Bootstrap core JavaScript
