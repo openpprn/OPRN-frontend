@@ -33,7 +33,7 @@ title: My Health Data
             %td.col-md-7{:style => "background-color: #f5f5f5 !important;"}
               %textarea.col-md-12{:placeholder => "Type a journal entry here.."}
             %td.col-md-1{:style => "background-color: #f5f5f5 !important;"}
-              .btn.btn-primary Post
+              %a.btn.btn-primary{:href=>"javascript:location.reload();"} Post
           %tr
             %td March 2
             %td Fitbit: 10,000 Steps
@@ -97,7 +97,7 @@ title: My Health Data
               %i.fa.fa-check
             %td 23&Me
       .panel-footer
-        %a.btn.btn-default.btn-block{:href => "/contributions/"} Manage Data Connections
+        %a.btn.btn-default.btn-block{:href => "/contributions#data_connections"} Manage Data Connections
 
     %br/
 

@@ -31,14 +31,14 @@ title: My Karma
                 %h4 Basic Health Information
 
             %td.text-right
-              .btn.btn-success.pull-left.btn-sm Please Complete
+              %a.btn.btn-success.pull-left.btn-sm{:href => "/health_profile/"} Fill Out
 
+              %a{:name => "data_connections"}
 
       .panel-footer
         .pull-right
           %h3 +100
         .clearfix
-
 
     .panel.panel-default
       .panel-heading
@@ -139,7 +139,7 @@ title: My Karma
             %td
               %h4 How does your Gender affect IBD?
             %td.text-right
-              .btn.btn-success.btn-sm Complete Survey
+              %a.btn.btn-success.btn-sm{:href => "/survey"} Complete Survey
       .panel-footer.text-right
         %h3 +100
 

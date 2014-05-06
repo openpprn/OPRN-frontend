@@ -6,6 +6,11 @@ title: My Health Profile
   .col-md-6
     %form.form-horizontal{role: "form"}
       .form-group
+        %label.col-sm-4.control-label Name
+        .col-sm-8
+          %input.form-control{:type => "text"}
+      %hr/
+      .form-group
         %label.col-sm-4.control-label Condition
         .col-sm-8
           %input.form-control{placeholder: "Crohn's, Colitis, Other", type: "text"}/
@@ -39,5 +44,6 @@ title: My Health Profile
         %label.col-sm-4.control-label Treatments Taken in Past
         .col-sm-8
           %textarea.form-control
-      .form-group
-        %a.btn.btn-primary.pull-right{:href => "/contributions"} Save
+
+
+      %a.btn.btn-primary.pull-right{:href => "javascript:history.back()"} Done

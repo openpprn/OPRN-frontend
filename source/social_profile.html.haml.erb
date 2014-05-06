@@ -1,0 +1,56 @@
+---
+title: My Social Profile
+---
+
+.row
+  .col-md-9
+
+
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title Visibility Preferences
+      .panel-body
+        %form.form-horizontal{role: "form"}
+          .radio
+            %label
+              %input#optionsRadios1{checked: "checked", name: "optionsRadios", type: "radio", value: "option1"}/
+              %strong
+                Hide Me.
+              Do not show to anyone that I'm on this site.
+          .radio
+            %label
+              %input#optionsRadios2{name: "optionsRadios", type: "radio", value: "option2"}/
+              %strong
+                Share Me.
+              Share the below information with other patients on the site.
+
+
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title Picture
+      .panel-body
+        %form.form-horizontal{role: "form"}
+          .form-group
+            %label.col-sm-2.control-label
+              %img.img-circle.center-block{:src => "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest('seanahrens@gmail.com')}?d=identicon", :style => "margin-right: 10px;"}
+            .col-sm-10
+              %p
+                %strong
+                  Upload New
+              %input.form-control{:type => "file"}
+
+    .panel.panel-default
+      .panel-heading
+        %h4.panel-title Personal Info
+      .panel-body
+        %form.form-horizontal{role: "form"}
+          .form-group
+            %label.col-sm-2.control-label Name
+            .col-sm-10
+              %input.form-control{:type=>"text", :value => "Sean Ahrens"}
+          .form-group
+            %label.col-sm-2.control-label Bio
+            .col-sm-10
+              %textarea.form-control{:placeholder=>"Type anything you want other people around you to see."}
+
+    %a.btn.btn-primary.pull-right{:href => "javascript:history.back()"} Save
