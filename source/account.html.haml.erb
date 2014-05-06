@@ -2,15 +2,6 @@
 title: My Account
 ---
 
-
-
-.row
-  .col-xs-12
-    .page-header
-      %h1
-        My Account
-        %small
-
 .row
   .col-md-9
     .panel.panel-default
@@ -44,6 +35,15 @@ title: My Account
               %input#optionsRadios2{name: "optionsRadios", type: "radio", value: "option2"}/
               Don't Email Me
 
-
-    %button.btn.btn-danger.btn-sm.btn-link.pull-left Delete Account
     %button.btn.btn-primary.pull-right Save
+
+
+  .col-md-3
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title Your Data
+
+      .panel-body.text-center
+        %button.btn.btn-default.btn-block Download All My Data
+        %br/
+        %a.small{:href => ""} Delete My Account

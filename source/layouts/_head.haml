@@ -29,4 +29,5 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
     / Page Title
-    %title= current_page.data.title
+    / Use @title, @html_title, or @page_title, in this order of preference.
+    %title= current_page.data.title || current_page.data.html_title || current_page.data.page_title

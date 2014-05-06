@@ -1,5 +1,16 @@
 %table.table.table-striped.table-responsive
   %tbody
+    %tr.info
+    %td.col-md-1
+      Today
+    %td.col-md-3
+      How are you feeling?
+      %br/
+      Yik ... Meh ... Great ... Awes
+      %input{:type => "range"}
+    %td.col-md-8
+      %textarea.col-md-9{:placeholder => "Type a journal entry here.."}
+      .btn.btn-primary.pull-right.col-md-2.col-md-offset-1 Post
     %tr
       %td March 2
       %td Fitbit: 10,000 Steps

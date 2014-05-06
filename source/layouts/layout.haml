@@ -13,24 +13,32 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: "/dashboard"} My PPRN
+          %a.navbar-brand{href: "/"} Patient Group
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li
-              %a{href: "/dashboard"} Research Center
+              %a{href: "/research"} Research Topics
             %li
               %a{href: "/data"} My Health Data
             %li
               %a{href: "/social"} People
-            / %li
-            /   %a{href: "/insights"} Insights
+            %li
+              %a{href: "/contributions"}
+                My Karma
+                .badge
+                  800
           %ul.nav.navbar-nav.pull-right
             %li
               %a{href: "/account"} seanahrens@gmail.com
-            %li
-              %a{href: "/contributions"} 650
-            %li
-              %a{href: "/login"}
-                %i.fa.fa-sort-down
+
+
+    // Page Header
+    - unless current_page.data.hide_page_header
+      .row
+        .col-xs-12
+          .page-header
+            %h1
+              = current_page.data.title || current_page.data.page_title
+              %small= current_page.data.page_subtitle
     = yield
     = partial "/layouts/foot.haml"
