@@ -20,7 +20,7 @@
       <!-- Custom styles for this template -->
       <link href='/stylesheets/application.css' rel='stylesheet'>
       <!-- Page Specific Stylesheet (Hand-coded here) -->
-      <link href='/stylesheets/landing.css' rel='stylesheet'>
+      <link href='/stylesheets/survey.css' rel='stylesheet'>
       <!-- Font Awesome -->
       <link href='/stylesheets/font-awesome.min.css' rel='stylesheet'>
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
       <![endif]-->
       <!-- Page Title -->
       <!-- Use @title, @html_title, or @page_title, in this order of preference. -->
-      <title>Landing Page</title>
+      <title>Survey</title>
     </head>
   </html>
 </html>
@@ -76,9 +76,61 @@
       </div>
     </div>
     <!-- / Page Header -->
-    <div class='starter-template'>
-      <h1>CCFA Partners</h1>
+    <div class='row'>
+      <div class='col-xs-12'>
+        <div class='page-header'>
+          <h1>
+            Survey
+            <small></small>
+          </h1>
+        </div>
+      </div>
     </div>
+    <div class='row'>
+      <div class='col-md-9'>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <h4 class='panel-title'>Question 1</h4>
+          </div>
+          <div class='panel-body'>
+            <form class='form-horizontal' role='form'>
+              <div class='form-group'>
+                <label class='col-sm-4 control-label'>City of Diagnosis</label>
+                <div class='col-sm-8'>
+                  <p class='form-control'></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+            <h4 class='panel-title'>Question 2</h4>
+          </div>
+          <div class='panel-body'>
+            <form class='form-horizontal' role='form'>
+              <strong>Have you ever done this?</strong>
+              <div class='radio'>
+                <label>
+                  <input checked='checked' id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
+                  Yes
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  <input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
+                  No
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <a class='btn btn-primary pull-right' href='javascript:history.back()'>Done</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
     <!--
       Bootstrap core JavaScript
       ==================================================
