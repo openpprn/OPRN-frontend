@@ -32,14 +32,19 @@
               %a{href: "/account"} seanahrens@gmail.com
 
 
+
+
     // Page Header
-    - unless current_page.data.hide_page_header
-      .row
-        .col-xs-12
+    .row
+      .col-xs-12
+        - if current_page.data.hide_page_header
+          .page-header-custom-blank
+        - else
           .page-header
             %h1
               = current_page.data.title || current_page.data.page_title
               %small= current_page.data.page_subtitle
+
     = yield
     %br/
     %br/
