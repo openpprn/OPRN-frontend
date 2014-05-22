@@ -1,0 +1,5 @@
+-# start your html with a .row
+-# and divide up that .row in .col's
+
+.row
+  .col-md-12
