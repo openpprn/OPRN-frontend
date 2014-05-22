@@ -1,3 +1,14 @@
+
+/ Special Handling for Pages that Have Different Modes Available
+- if current_page.data.fux_available
+  %hr/
+  %center
+    - if !current_page.url.include?("fux")
+      %a.small{:href => "#{current_page.url}fux/"} View as FUX
+    - else
+      %a.small{:href => "#{current_page.url.gsub('fux/','')}"  } View as Default
+  %br/
+
 /
   Bootstrap core JavaScript
   \==================================================

@@ -12,13 +12,13 @@ TRACKING DATA
 - Quick-Click Comparisons/Views
 
 DATASETS
-- Reported Disease States (Remission)
-- Disease Location and Sub-specification
+- Reported Disease States (ie. Remission, Flare, etc.)
+- Disease Sub-specification & Location
 - What Questions to Ask Every Patient on Signup
 - Anchors for Overall Health
-- Treatment Dataset
-- Symptom Dataset
-- The recurring survey questions
+- Treatment Dataset (Database/Dataset of Treatments)
+- Symptom Dataset (List/Dataset of Symptoms)
+- The recurring frequent survey questions
 
 
 COPY
@@ -31,7 +31,7 @@ COPY
 - Contributions/Karma Page: "Here's your progress towards research. Here are the more things you can do to increase how much you've helped."
 - About Page: Copy "Here's more information about the organzation behind this site and how you can contact them".
 
-FIRST CONTENT
+FIRST CONTENT (Don't want it to start off blank)
 - First Blog Post(s)
 - First Survey(s)
 - First Proposed Research Questions(s)
@@ -44,10 +44,11 @@ TECHNICAL QUESTIONS
 
 
 PEOPLE
-- Who is manning the support email address? Who is managing the content?
-- Who is administrating the software, if technical glitches, bug reports, or technical support?
+Community, Researcher, Technical
+- Who is manning the support email address?
+- Who is managing the community? Managing the content? Emails?
 - Who is watching the activity of the site, and improving the product to make it meet the business goals?
 - Who is managing inbound researcher queries?
 - Who is responding to research questions?
-- What Emails We Want to Send Out?
-- Contact Us Information
+- Who is administrating the software, if technical glitches, bug reports, or technical support?
+- What is the Contact Us Information

@@ -1,10 +1,14 @@
 ---
 title: My Health Data
+fux_available: true
 ---
 
 .row
 
   .col-md-9
+
+    - if (defined? mode) && (mode == "fux")
+      .alert.alert-info It looks like it's your first time
 
     .panel.panel-default
       %img{:src=> "/images/time-graph.png", :width => "100%"}
