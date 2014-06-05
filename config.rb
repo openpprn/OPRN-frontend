@@ -35,6 +35,8 @@ page "*", :layout => "layout.haml"
   proxy "/data/#{mode}.html", "data.html", :locals => { :mode => mode }
 end
 
+# http://stackoverflow.com/questions/9861038/pass-a-variable-to-template-in-middleman-2
+
 ###
 # Helpers
 ###
@@ -96,4 +98,8 @@ activate :deploy do |deploy|
 
   # To automatically run middleman build during middleman deploy, turn on the build_before option while activating the deploy extension:
   deploy.build_before = true
+
 end
+
+
+set :patient_group, "My Apnea" # Replace with "Sleep Apnea" to demo SAPCON title

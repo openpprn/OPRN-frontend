@@ -11,7 +11,7 @@ This code is using the Middleman framework (http://middlemanapp.com/). Middleman
 
 gh-pages Branch
 ---
-http://demo.openpprn.org points directly to the gh-pages branch. The gh-pages branch holds the generated html from the source code in the master branch. Middleman takes care doing that html generation. gh-pages should always be in sync with the source code here (at least it's baked into Sean's deploy scripts to do this.)
+http://demo.openpprn.org points directly to the gh-pages branch. The gh-pages branch holds the generated html from the source code in the master branch. Middleman takes care doing that html generation. gh-pages should always be in sync with the master branch (at least it's baked into Sean's deploy scripts to do this.)
 
 Current Status
 ---

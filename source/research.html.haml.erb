@@ -7,7 +7,7 @@ title: Research Topics
     .panel.panel-default
       .panel-heading
         %h3.panel-title.pull-left Research Topics
-        .btn-group.btn-group-xs.pull-right
+        .btn-group.btn-group-xs.pull-right.hidden-xs
           %button.btn.btn-default{type: "button"} Actively Being Researched
           %button.btn.btn-default{type: "button"} Popularly Demanded
           %button.btn.btn-default{type: "button"} Newest Ideas
@@ -17,51 +17,44 @@ title: Research Topics
         %tbody
           %tr
             %td
-              %a{:href => "/survey"}
-                %h4 Does a Gluten-Free Diet Improve Health?
-            %td 100
-            %td
+              %a{:href => "/research_question"}
+                %h4 Does a Oxygen work for this subtype of Sleep Apnea?
+            / %td 100
+            / %td
 
           %tr
             %td
-              %a{:href => "/survey"}
-                %h4 Do Artificial Sweeteners Exacerbate Symptoms?
-            %td 50
-            %td
-              %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+              %a{:href => "/research_question"}
+                %h4 Does sleeping on your side change the effects?
+            / %td 50
+            / %td
+            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
 
           %tr
             %td
-              %a{:href => "/survey"}
-                %h4 How does pregancy affect disease activity?
-            %td 40
-            %td
-              %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+              %a{:href => "/research_question"}
+                %h4 How does pregancy affect condition activity?
+            / %td 40
+            / %td
+            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
           %tr
             %td
-              %a{:href => "/survey"}
-                %h4 Does a Gluten-Free Diet Improve Health?
-            %td 100
-            %td
+              %a{:href => "/research_question"}
+                %h4 Can a six week schedule of 10,000 steps improve Apnea symptoms?
+            / %td 100
+            / %td
 
           %tr
             %td
-              %a{:href => "/survey"}
-                %h4 Do Artificial Sweeteners Exacerbate Symptoms?
-            %td 50
-            %td
-              %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+              %a{:href => "/research_question"}
+                %h4 Which is a more effective dosing schedule of Drug A?
+            / %td 50
+            / %td
+            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
 
-          %tr
-            %td
-              %a{:href => "/survey"}
-                %h4 How does pregancy affect disease activity?
-            %td 40
-            %td
-              %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
           %tr
             %td.text-right{"colspan" => 3}
-              %button.btn.btn-default.btn-sm{:style=>"margin-top: 3px;"} Submit Research Question
+              %a.btn.btn-default.btn-sm{:href => "/new_question", :style=>"margin-top: 3px;"} Submit Research Question
 
 
       .panel-footer{:style=> "padding-bottom: 0px; padding-right: 8px; padding-top: 5px;"}
