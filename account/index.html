@@ -60,18 +60,18 @@
             <li>
               <a href='/social'>People</a>
             </li>
-            <li>
-              <a href='/contributions'>
-                My Karma
-                <div class='badge'>
-                  800
-                </div>
-              </a>
-            </li>
           </ul>
           <ul class='nav navbar-nav pull-right'>
             <li>
-              <a href='/account'>seanahrens@gmail.com</a>
+              <a href='/contributions'>
+                800
+                <i class='fa fa-star'></i>
+              </a>
+            </li>
+            <li>
+              <a href='/account'>
+                <i class='fa fa-gear'></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -89,62 +89,99 @@
       </div>
     </div>
     <div class='row'>
-      <div class='col-md-9'>
-        <div class='panel panel-default'>
-          <div class='panel-heading'>
-            <h4 class='panel-title'>Login</h4>
+      <div class='col-md-12'>
+        <ul class='nav nav-tabs'>
+          <li class='active'>
+            <a data-toggle='tab' href='#user'>User Account</a>
+          </li>
+          <li>
+            <a data-toggle='tab' href='#basic'>Basic</a>
+          </li>
+          <li>
+            <a data-toggle='tab' href='#notifs'>Notifications</a>
+          </li>
+          <li>
+            <a data-toggle='tab' href='#research'>Research Topics</a>
+          </li>
+        </ul>
+        <br>
+        <div class='nav tab-content'>
+          <div class='tab-pane' id='basic'>
+            <div class='panel panel-default'>
+              <div class='panel-heading'>
+                <h3 class='panel-title'>Basic</h3>
+              </div>
+              <div class='panel-body'>
+                test
+              </div>
+            </div>
           </div>
-          <div class='panel-body'>
-            <form class='form-horizontal' role='form'>
-              <div class='form-group'>
-                <label class='col-sm-2 control-label'>Email</label>
-                <div class='col-sm-10'>
-                  <p class='form-control'>email@example.com</p>
+          <div class='tab-pane' id='notifs'>
+            notifs
+          </div>
+          <div class='tab-pane' id='research'>
+            research
+          </div>
+          <div class='tab-pane active' id='user'>
+            <div class='col-md-9'>
+              <div class='panel panel-default'>
+                <div class='panel-heading'>
+                  <h4 class='panel-title'>Login</h4>
+                </div>
+                <div class='panel-body'>
+                  <form class='form-horizontal' role='form'>
+                    <div class='form-group'>
+                      <label class='col-sm-2 control-label'>Email</label>
+                      <div class='col-sm-10'>
+                        <p class='form-control'>email@example.com</p>
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <label class='col-sm-2 control-label' for='inputPassword'>Password</label>
+                      <div class='col-sm-10'>
+                        <p class='form-control-static'>
+                          <a>Reset Password</a>
+                        </p>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div class='form-group'>
-                <label class='col-sm-2 control-label' for='inputPassword'>Password</label>
-                <div class='col-sm-10'>
-                  <p class='form-control-static'>
-                    <a>Reset Password</a>
-                  </p>
+              <div class='panel panel-default'>
+                <div class='panel-heading'>
+                  <h4 class='panel-title'>Notification Preferences</h4>
+                </div>
+                <div class='panel-body'>
+                  <form class='form-horizontal' role='form'>
+                    <div class='radio'>
+                      <label>
+                        <input checked='checked' id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
+                        Email Me
+                      </label>
+                    </div>
+                    <div class='radio'>
+                      <label>
+                        <input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
+                        Don't Email Me
+                      </label>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class='panel panel-default'>
-          <div class='panel-heading'>
-            <h4 class='panel-title'>Notification Preferences</h4>
-          </div>
-          <div class='panel-body'>
-            <form class='form-horizontal' role='form'>
-              <div class='radio'>
-                <label>
-                  <input checked='checked' id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
-                  Email Me
-                </label>
+              <button class='btn btn-primary pull-right'>Save</button>
+            </div>
+            <div class='col-md-3'>
+              <div class='panel panel-default'>
+                <div class='panel-heading'>
+                  <h3 class='panel-title'>Your Data</h3>
+                </div>
+                <div class='panel-body text-center'>
+                  <button class='btn btn-default btn-block'>Download All My Data</button>
+                  <br>
+                  <a class='small' href=''>Delete My Account</a>
+                </div>
               </div>
-              <div class='radio'>
-                <label>
-                  <input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
-                  Don't Email Me
-                </label>
-              </div>
-            </form>
-          </div>
-        </div>
-        <button class='btn btn-primary pull-right'>Save</button>
-      </div>
-      <div class='col-md-3'>
-        <div class='panel panel-default'>
-          <div class='panel-heading'>
-            <h3 class='panel-title'>Your Data</h3>
-          </div>
-          <div class='panel-body text-center'>
-            <button class='btn btn-default btn-block'>Download All My Data</button>
-            <br>
-            <a class='small' href=''>Delete My Account</a>
+            </div>
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@
       <!-- Custom styles for this template -->
       <link href='/stylesheets/application.css' rel='stylesheet'>
       <!-- Page Specific Stylesheet (Hand-coded here) -->
-      <link href='/stylesheets/social_profile.css' rel='stylesheet'>
+      <link href='/stylesheets/admin.css' rel='stylesheet'>
       <!-- Font Awesome -->
       <link href='/stylesheets/font-awesome.min.css' rel='stylesheet'>
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +30,7 @@
       <![endif]-->
       <!-- Page Title -->
       <!-- Use @title, @html_title, or @page_title, in this order of preference. -->
-      <title>My Social Profile</title>
+      <title>Admin</title>
     </head>
   </html>
 </html>
@@ -82,105 +82,42 @@
       <div class='col-xs-12'>
         <div class='page-header'>
           <h1>
-            My Social Profile
+            Admin
             <small></small>
           </h1>
         </div>
       </div>
     </div>
     <div class='row'>
-      <div class='col-md-9'>
-        <form class='form-horizontal' role='form'>
-          <div class='alert alert-info'>
-            <div class='radio'>
-              <label>
-                <input id='optionsRadios2' name='optionsRadios' type='radio' value='option2'>
-                <strong>
-                  Be Social.
-                </strong>
-                Share the below information with other patients on the site.
-              </label>
-            </div>
-            <div class='radio'>
-              <label>
-                <input checked='checked' id='optionsRadios1' name='optionsRadios' type='radio' value='option1'>
-                <strong>
-                  Don't be Social.
-                </strong>
-                Do not show to anyone that I'm on this site.
-              </label>
+      <div class='col-md-12'>
+        <ul class='nav nav-tabs'>
+          <li class='active'>
+            <a data-toggle='tab' href='#basic'>Basic</a>
+          </li>
+          <li>
+            <a data-toggle='tab' href='#notifs'>Notifications</a>
+          </li>
+          <li>
+            <a data-toggle='tab' href='#research'>Research Topics</a>
+          </li>
+        </ul>
+        <br>
+        <div class='nav tab-content'>
+          <div class='tab-pane active' id='basic'>
+            <div class='panel panel-default'>
+              <div class='panel-heading'>
+                <h3 class='panel-title'>Basic</h3>
+              </div>
+              <div class='panel-body'>
+                test
+              </div>
             </div>
           </div>
-        </form>
-      </div>
-      <div class='col-md-3'></div>
-    </div>
-    <div class='row'>
-      <div class='col-md-9'>
-        <div class='panel panel-default'>
-          <div class='panel-body'>
-            <form class='form-horizontal' role='form'>
-              <div class='form-group'>
-                <label class='col-sm-2 control-label'>
-                  <img class='img-circle center-block' src='http://www.gravatar.com/avatar/62e60779e9558315d75046565c72ff38?d=identicon' style='margin-right: 10px;'>
-                </label>
-                <div class='col-sm-10'>
-                  <p>
-                    <strong>
-                      Upload New
-                    </strong>
-                  </p>
-                  <input type='file'>
-                </div>
-              </div>
-            </form>
-            <form class='form-horizontal' role='form'>
-              <div class='form-group'>
-                <label class='col-sm-2 control-label'>Name</label>
-                <div class='col-sm-6'>
-                  <input class='form-control' type='text' value='Sean Ahrens'>
-                </div>
-              </div>
-              <div class='form-group'>
-                <label class='col-sm-2 control-label'>Bio</label>
-                <div class='col-sm-6'>
-                  <textarea class='form-control' placeholder='Type anything you want other people around you to see.'></textarea>
-                </div>
-              </div>
-              <!-- .form-group -->
-              <!-- %label.col-sm-2.control-label Share My... -->
-              <!-- .col-sm-10 -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- %input{type: "checkbox"}/ -->
-              <!-- %u -->
-              <!-- Basic Health Information -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- Age -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- Years Since Diagnosis -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- Condition -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- %input{type: "checkbox"}/ -->
-              <!-- %u -->
-              <!-- Overall Health -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- %input{type: "checkbox"}/ -->
-              <!-- %u -->
-              <!-- Treatment Timeline -->
-              <!-- .checkbox -->
-              <!-- %label -->
-              <!-- %input{type: "checkbox"}/ -->
-              <!-- %u -->
-              <!-- Journal -->
-            </form>
-            <a class='btn btn-primary pull-right' href='javascript:history.back()'>Save</a>
+          <div class='tab-pane' id='notifs'>
+            notifs
+          </div>
+          <div class='tab-pane' id='research'>
+            research
           </div>
         </div>
       </div>
