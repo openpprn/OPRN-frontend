@@ -1,13 +1,29 @@
 
-/ Special Handling for Pages that Have Different Modes Available
-- if current_page.data.fux_available
-  %hr/
-  %center
-    - if !current_page.url.include?("fux")
-      %a.small{:href => "#{current_page.url}fux/"} View as FUX
-    - else
-      %a.small{:href => "#{current_page.url.gsub('fux/','')}"  } View as Default
-  %br/
+%hr/
+.row
+  .col-md-4.col-md-offset-4
+    %form.form-horizontal{:role => "form"}
+      .form-group
+        %label.control-label.col-md-6{for: "inputPassword3"}
+          %i.fa.fa-globe &nbsp; Language:
+        .col-md-6
+          %select.form-control
+            %option
+              %i.fa.fa-globe
+              English
+            %option Spanish
+
+
+  / Special Handling for Pages that Have Different Modes Available
+  - if current_page.data.fux_available
+    .row
+      .col-md-12.text-center
+
+        - if !current_page.url.include?("fux")
+          %a.small{:href => "#{current_page.url}fux/"} View as FUX
+        - else
+          %a.small{:href => "#{current_page.url.gsub('fux/','')}"  } View as Default
+        %br/
 
 /
   Bootstrap core JavaScript
