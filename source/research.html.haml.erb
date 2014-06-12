@@ -6,55 +6,99 @@ title: Research Topics
   .col-md-9
     .panel.panel-default
       .panel-heading
-        %h3.panel-title.pull-left Research Topics
-        .btn-group.btn-group-xs.pull-right.hidden-xs
-          %button.btn.btn-default{type: "button"} Actively Being Researched
-          %button.btn.btn-default{type: "button"} Popularly Demanded
-          %button.btn.btn-default{type: "button"} Newest Ideas
-        .clearfix
+        %h3.panel-title Research Topics
 
-      %table.table.table-responsive
-        %tbody
-          %tr
-            %td
-              %a{:href => "/research_question"}
-                %h4 Does a Oxygen work for this subtype of Sleep Apnea?
-            / %td 100
-            / %td
+      .panel-body
+        %ul.nav.nav-tabs
+          %li.active
+            %a{href: "#inprogress", "data-toggle" => "tab"} In Progress
+          %li
+            %a{href: "#new", "data-toggle" => "tab"} New Proposals
+          %li
+            %a{href: "#completed", "data-toggle" => "tab"} Completed
 
-          %tr
-            %td
-              %a{:href => "/research_question"}
-                %h4 Does sleeping on your side change the effects?
-            / %td 50
-            / %td
-            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+        %br/
 
-          %tr
-            %td
-              %a{:href => "/research_question"}
-                %h4 How does pregancy affect condition activity?
-            / %td 40
-            / %td
-            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
-          %tr
-            %td
-              %a{:href => "/research_question"}
-                %h4 Can a six week schedule of 10,000 steps improve Apnea symptoms?
-            / %td 100
-            / %td
+        .tab-content
+          .tab-pane#new
+            %table.table.table-responsive
+              %tbody
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 How does pregancy affect condition activity?
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Can a six week schedule of 10,000 steps improve Apnea symptoms?
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Which is a more effective dosing schedule of Drug A?
 
-          %tr
-            %td
-              %a{:href => "/research_question"}
-                %h4 Which is a more effective dosing schedule of Drug A?
-            / %td 50
-            / %td
-            /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+                %tr
+                  %td.text-right{"colspan" => 3}
+                    %a.btn.btn-success.btn-sm{:href => "/new_question", :style=>"margin-top: 3px;"} Submit Question
 
-          %tr
-            %td.text-right{"colspan" => 3}
-              %a.btn.btn-default.btn-sm{:href => "/new_question", :style=>"margin-top: 3px;"} Submit Research Question
+
+
+          .tab-pane#completed
+            %table.table.table-responsive
+              %tbody
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Does a Oxygen work for this subtype of Sleep Apnea?
+                  / %td 100
+                  / %td
+
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Does sleeping on your side change the effects?
+                  / %td 50
+                  / %td
+                  /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+
+          .tab-pane#inprogress.active
+            %table.table.table-responsive
+              %tbody
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Does a Oxygen work for this subtype of Sleep Apnea?
+                  / %td 100
+                  / %td
+
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Does sleeping on your side change the effects?
+                  / %td 50
+                  / %td
+                  /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 How does pregancy affect condition activity?
+                  / %td 40
+                  / %td
+                  /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Can a six week schedule of 10,000 steps improve Apnea symptoms?
+                  / %td 100
+                  / %td
+
+                %tr
+                  %td
+                    %a{:href => "/research_question"}
+                      %h4 Which is a more effective dosing schedule of Drug A?
+                  / %td 50
+                  / %td
+                  /   %a.btn.btn-success.btn-sm.pull-right{:href => "/survey"} Complete Survey
 
 
       .panel-footer{:style=> "padding-bottom: 0px; padding-right: 8px; padding-top: 5px;"}
